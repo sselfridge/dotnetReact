@@ -1,0 +1,159 @@
+body {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    /* text-align: justify; */
+    line-height: 1.5;
+    background-color: #2673b8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-around;
+    margin: 0 10%;
+    max-width: 1000px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.25em;
+    border-bottom: 5px solid black;
+}
+
+#submitArea {
+    /* margin-top: 50px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+#submitArea .button, #allDone .button {
+    margin-top: 25px;
+}
+
+#textArea {
+    width: 80%;
+    height: 250px;
+    font-size: 2em;
+}
+
+#allDone {
+    margin-top: 50px;
+    align-items: center;
+}
+
+#logo {
+    margin-top: 5%;
+    width: 75%;
+    height: 75%;
+}
+
+#contributeBtn2 {
+    margin-bottom: 20px;
+}
+
+
+
+#insta {
+    padding-right: 8 px;
+}
+
+#insta {
+    width: 35px;
+}
+
+
+a {
+    color: white
+}
+
+h1 {
+    flex: 1;
+    font-size: calc(min(9vw, 75px));
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+article {
+    flex: 12;
+}
+
+.sbmt {
+    font-family: coordinates, monospace;
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+h1 .sbmt {
+    letter-spacing: 1px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.button {
+    padding: 20px 40px;
+    border-radius: 5px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.hideElm {
+    display: none;
+}
+
+.flexCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactList>* {
+    display: flex;
+    font-size: 24px;
+    font-weight: 800;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactList>a {
+    margin-bottom: 50px;
+}
+
+.characterCount {
+    font-size: 12px;
+}
+
+
+/* @media only screen and (min-width: 500px) {
+    body {
+        background-color: green;
+    }
+
+    #logo {
+        margin-top: 5%;
+        width: 50%;
+        height: 50%;
+    }
+
+
+    h1 .sbmt {
+        letter-spacing: -5px;
+    }
+} */
