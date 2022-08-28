@@ -138,10 +138,10 @@ export default class App extends Component {
             What is <span className="sbmt">SBMT</span> ?
           </h1>
           <article>
-            Inspired by the
+            Inspired by the{" "}
             <a href="http://www.smmtchallenge.com">
               Santa Monica Mountain Challenge
-            </a>
+            </a>{" "}
             the <span className="sbmt">SBMT</span> is the same idea here in
             Santa Barbara. <br />
             We'll have a list of 10-15 local cycling climbs and a leaderboard
