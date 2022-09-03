@@ -138,6 +138,7 @@ h1 .sbmt {
 
 .button.segments {
     background-color: #44ecf6;
+    white-space: nowrap;
 }
 
 .button.segments a {

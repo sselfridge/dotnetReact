@@ -115,9 +115,9 @@ export default class App extends Component {
               May 26th 2023
             </h2>
           </div>
-          <div className="button segments">
-            <a href="#segmentList">Segment List Announced!!!</a>
-          </div>
+          <a href="#segmentList">
+            <div className="button segments">Segment List Announced!!!</div>
+          </a>
           <div id="infoBtn" className="button">
             Info
           </div>
