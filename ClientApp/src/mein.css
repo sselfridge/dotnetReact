@@ -12,7 +12,11 @@ body {
     align-items: center;
 }
 
-
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 section {
     display: flex;
@@ -29,6 +33,14 @@ header {
     justify-content: space-around;
     font-size: 2.25em;
     border-bottom: 5px solid black;
+}
+
+th, td {
+    padding-left: 30px
+}
+
+th:nth-child(2) {
+    min-width: 275px;
 }
 
 #submitArea {
@@ -72,6 +84,13 @@ header {
     width: 35px;
 }
 
+#postSegmentText {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
 
 a {
     color: white
@@ -111,9 +130,18 @@ h1 .sbmt {
 .button {
     padding: 20px 40px;
     border-radius: 5px;
-    background-color: black;
+    background-color: #050505;
     cursor: pointer;
 }
+
+.button.segments {
+    background-color: #44ecf6;
+}
+
+.button.segments a {
+    color: #020202
+}
+
 
 .hideElm {
     display: none;
@@ -141,19 +169,22 @@ h1 .sbmt {
 }
 
 
-/* @media only screen and (min-width: 500px) {
-    body {
-        background-color: green;
+@media only screen and (max-width: 950px) {
+    /* body {
+        background-color: pink;
+    } */
+
+    tr td:nth-child(4), tr td:nth-child(5), tr th:nth-child(4), tr th:nth-child(5) {
+        display: none
     }
 
-    #logo {
-        margin-top: 5%;
-        width: 50%;
-        height: 50%;
+    td {
+        border-spacing: 15px;
     }
 
-
-    h1 .sbmt {
-        letter-spacing: -5px;
+    table {
+        border-collapse: separate;
+        border-spacing: 15px;
     }
-} */
+
+}

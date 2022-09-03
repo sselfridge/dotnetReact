@@ -15,6 +15,7 @@ const targetMap = {
   infoBtn: "infoSection",
   contributeBtn: "contributeSection",
   contributeBtn2: "contributeSection",
+  letMeKnow: "contributeSection",
 };
 export default class App extends Component {
   static displayName = App.name;
@@ -103,7 +104,7 @@ export default class App extends Component {
     setInterval(onTextChange, 450);
 
     return (
-      <div>
+      <div className="root">
         <section>
           <div className="logo">
             {/* <img alt="rabble" id="logo" src="./assets/logoV1.svg" /> */}
@@ -113,6 +114,9 @@ export default class App extends Component {
               <br />
               May 26th 2023
             </h2>
+          </div>
+          <div className="button segments">
+            <a href="#segmentList">Segment List Announced!!</a>
           </div>
           <div id="infoBtn" className="button">
             Info
@@ -145,8 +149,8 @@ export default class App extends Component {
             the <span className="sbmt">SBMT</span> is the same idea here in
             Santa Barbara. <br />
             We'll have a list of 10-15 local cycling climbs and a leaderboard
-            running. Starts Memorial Day weekend and runs through end of Labor
-            Day weekend.
+            running. Starts Memorial Day weekend and runs til just before labor
+            day weekend
             <br />
             <br />
             Ranking is done 1st by number of segments completed, then total
@@ -207,7 +211,207 @@ export default class App extends Component {
               </div>
             </div>
           </article>
-        </section>{" "}
+        </section>
+        <section id="segmentList">
+          <h1>Segments</h1>
+
+          <article>
+            <h3>Road</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Name</th>
+                  <th>KOM</th>
+                  <th>Miles</th>
+                  <th>Elevation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <a href={"https://www.strava.com/segments/658277"}>
+                      Gibraltar
+                    </a>
+                  </td>
+                  <td>0:27:12</td> <td>6.14</td> <td>2593</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <a href={"https://www.strava.com/segments/1290381"}>OSM</a>
+                  </td>
+                  <td>0:12:58</td> <td>2.97</td> <td>1165</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>
+                    <a href={"https://www.strava.com/segments/637362"}>
+                      Painted Cave
+                    </a>
+                  </td>
+                  <td>0:15:44</td> <td>3.52</td> <td>1336</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>
+                    <a href={"https://www.strava.com/segments/881465"}>
+                      Ladera
+                    </a>
+                  </td>
+                  <td>0:04:23</td> <td>0.86</td> <td>496</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>
+                    <a href={"https://www.strava.com/segments/631703"}>
+                      Farren Road
+                    </a>
+                  </td>
+                  <td>0:06:59</td> <td>2.01</td> <td>508</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>
+                    <a href={"https://www.strava.com/segments/3596686"}>
+                      Tunnel Rd
+                    </a>
+                  </td>
+                  <td>0:10:43</td> <td>1.92</td> <td>647</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>
+                    <a href={"https://www.strava.com/segments/29015105"}>
+                      Roundabout to Mtn
+                    </a>
+                  </td>
+                  <td>0:13:22</td> <td>2.91</td> <td>710</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>
+                    <a href={"https://www.strava.com/segments/618305"}>
+                      Toro Canyon Full
+                    </a>
+                  </td>
+                  <td>0:14:14</td> <td>2.17</td> <td>1194</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>
+                    <a href={"https://www.strava.com/segments/1313"}>
+                      First Casitas Pass
+                    </a>
+                  </td>
+                  <td>0:08:16</td> <td>2.5</td> <td>730</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>
+                    <a href={"https://www.strava.com/segments/1315"}>
+                      Second Casitas Pass
+                    </a>
+                  </td>
+                  <td>0:04:30</td> <td>1.33</td> <td>404</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>
+                    <a href={"https://www.strava.com/segments/5106261"}>
+                      Casitas Climb (rear)
+                    </a>
+                  </td>
+                  <td>0:12:25</td> <td>4.42</td> <td>654</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>
+                    <a href={"https://www.strava.com/segments/12039079"}>
+                      Sycamore Coyote
+                    </a>
+                  </td>
+                  <td>0:11:19</td> <td>2.22</td> <td>736</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>
+                    <a href={"https://www.strava.com/segments/813814"}>
+                      Arroyo Burro to La Cumbre
+                    </a>
+                  </td>
+                  <td>0:12:10</td> <td>2.67</td> <td>879</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>
+                    <a href={"https://www.strava.com/segments/751029"}>
+                      Las Alturas
+                    </a>
+                  </td>
+                  <td>0:05:35</td> <td>1.3</td> <td>597</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Gravel</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Name</th>
+                  <th>KOM</th>
+                  <th>Miles</th>
+                  <th>Elevation</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <a href="https://www.strava.com/segments/746977">
+                      Angostura
+                    </a>
+                  </td>
+                  <td>0:31:27</td> <td>5.89</td> <td>1738</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <a href="https://www.strava.com/segments/647251"> Romero</a>
+                  </td>
+                  <td>0:36:01</td> <td>6.09</td> <td>2178</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>
+                    <a href="https://www.strava.com/segments/2622235">
+                      {" "}
+                      Arroyo Burro
+                    </a>
+                  </td>
+                  <td>0:33:30</td> <td>5.3</td> <td>1944</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>
+                    <a href="https://www.strava.com/segments/641588">
+                      Refugio Ocean side
+                    </a>
+                  </td>
+                  <td>0:58:14</td> <td>12.43</td> <td>3838</td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="postSegmentText">
+              Did I miss one?
+              <div id="letMeKnow" className="button">
+                Let me know!!
+              </div>
+            </div>
+          </article>
+        </section>
       </div>
     );
   }
