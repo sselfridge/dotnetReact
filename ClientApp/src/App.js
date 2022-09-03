@@ -116,7 +116,7 @@ export default class App extends Component {
             </h2>
           </div>
           <div className="button segments">
-            <a href="#segmentList">Segment List Announced!!</a>
+            <a href="#segmentList">Segment List Announced!!!</a>
           </div>
           <div id="infoBtn" className="button">
             Info
